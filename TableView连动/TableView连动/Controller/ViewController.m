@@ -64,7 +64,7 @@ typedef NS_ENUM(NSInteger, TableViewTag) {
 -(void)initAttributes{
     self.categories = [NSMutableArray array];
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 30; i++) {
         CategoryModel* cModel = [[CategoryModel alloc] init];
         cModel.categoryID = @(i);
         cModel.categoryName = [NSString stringWithFormat:@"嘴爷分类%d", i];
@@ -193,7 +193,7 @@ typedef NS_ENUM(NSInteger, TableViewTag) {
     }
     
     NSIndexPath* indexPath = [indexPathes firstObject];//找可见的cell中最小的索引
-    [self.categoryTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.section inSection:0] animated:NO scrollPosition:(UITableViewScrollPositionMiddle)];
+    [self.categoryTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.section inSection:0] animated:YES scrollPosition:(UITableViewScrollPositionMiddle)];
 }
 
 -(void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(nonnull UIView *)view forSection:(NSInteger)section{
@@ -209,7 +209,7 @@ typedef NS_ENUM(NSInteger, TableViewTag) {
     }
 
     NSIndexPath* indexPath = [indexPathes firstObject];//找可见的cell中最小的索引
-    [self.categoryTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.section inSection:0] animated:NO scrollPosition:(UITableViewScrollPositionMiddle)];
+    [self.categoryTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.section inSection:0] animated:YES scrollPosition:(UITableViewScrollPositionMiddle)];
 }
 
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
