@@ -161,6 +161,7 @@ typedef NS_ENUM(NSInteger, TableViewTag) {
     
     if (tableView.tag == TableViewTagCategory) {
         [self.dishTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:indexPath.row] atScrollPosition:(UITableViewScrollPositionTop) animated:YES];
+        [self.categoryTableView scrollToRowAtIndexPath:indexPath atScrollPosition:(UITableViewScrollPositionMiddle) animated:YES];
     }
     
 }
