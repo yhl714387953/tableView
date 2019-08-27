@@ -1,6 +1,7 @@
 ## 这个文件夹里都是***tableView***相关的
 
 - [dabiaoti3](#dabiaoti1)
+  - [zhongbiaoti1-3](#zhongbiaoti1-3)
 - [dabiaoti3](#dabiaoti2)
   - [zhongbiaoti2-2](#zhongbiaoti2-2)
 - [dabiaoti3](#dabiaoti3)
@@ -23,6 +24,7 @@ CocoaPods 是目前最流行的 Cocoa 项目库依赖管理工具之一，考虑
 
 在您的工程根目录下新建一个 Podfile 文件，或者用终端，在工程目录下，执行 pod init。然后 open -e Podfile。在文件中输入以下内容。（在此以 2.8.3 版本为例，其中 “MyApp” 为自己工程名）
 
+<span>zhongbiaoti1-3</span>
 #### 中标题3
 
 完成后，CocoaPods 会在您的工程根目录下生成一个 .xcworkspace 文件。您需要通过此文件打开您的工程，而不是之前的 .xcodeproj。
